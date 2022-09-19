@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Sorting Algorithm Visuzalizer</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background-color:#1f487e; color: white;">
+	<p style="text-align: center; color: white; font-size: 70px; background-color: #1d3461;">Sorting Algorithm Visualizer</p>
+	<div style="text-align: center; padding-top: 5px; padding-bottom: 15px;; background-color: #1d3461;">
+		<div>
+			<button class="b_clear" onclick="randomize(rects, d)" style="">randomize</button>
+			<button class="b_clear" onclick="reset(rects, d)" style="">reset</button>
+			<button class="b_clear" onclick="bubblesort(rects, d)" id="bubbleSORT" style="">bubble</button>
+			<button class="b_clear" onclick="selectionsort(rects, d)" id="selecSORT" style="">selection</button>
+			<button class="b_clear" onclick="shellsort(rects, d)" id="shellSORT" style="">shell</button>
+			<button class="b_clear" onclick="cocktail(rects, d)" id="cockSORT" style="">cocktail</button>
+			<button class="b_clear" onclick="bitonicCaller(rects, 1, d)" id="bitSORT" style="">Bitonic</button>
+			<!--quickSort(rects, 0, rects.length-1, d)-->
+			<button class="b_clear" onclick="quickSort(rects, 0, rects.length-1, d)" id="quickSORT" style="">quick</button>
+			<!--mergeSort(rects, 0, rects.length-1, d)-->
+			<!--
+			<button class="b_clear" onclick="mergeSort(rects, 0, rects.length-1, d)" id="mergeSORT" style="">broken merge</button>
+			-->
+			<button class="b_clear" onclick="inmergesort(rects, 0, rects.length-1, d)" id="mergeSORT" style="">in place merge</button>
+			<input type="range" min="0" max="500" value="1" id="slidespeed">speed</intput>
+			<input type="range" min="2" max="10" value="2" id="slidesize" >size</intput>
+		</div>
+	</div>
+	<div>
+		<canvas id="myCanvas" style="border: 1px solid black; position:absolute; 
+right:0;left:0; top: 0; bottom: 0;
+ margin:auto;"></canvas>
+		
+		<div>
+			<p>
+				Number of Rectangles:
+				<span id="current_num_rects" >4</span>
+				<br>
+				Speed (ms - smaller is faster):
+				<span id="current_speed" >0</span>
+				<br>
+				Number of Comparisons: <span id="num_comp" >0</span>
+				<br>
+				Number of Swaps: <span id="swap_cnt" >0</span>
+				<br>
+				Recursive calls: <span id="rec_cnt" >0</span>
+				<br>
+				Temporary Arrays created: <span id="arr_cnt" >0</span>
+				<br>
+			</p>
+		</div>
+	</div>
+	<script src="script.js"></script>
+	
+</body>
+<footer>
+	<p style="text-align: center; color: white; font-size: 25px; background-color: #1d3461; position:absolute; 
+ bottom:0;right:0;left:0; 
+ margin:auto;">
+		created by: Alexis Rodriguez <br>
+		spetember 2020 Cameron University
+	</p>
+</footer>
+</html>
