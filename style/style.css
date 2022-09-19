@@ -1,1 +1,36 @@
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+button{
+	background-color: #6290c8; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+span{
+ 	color: white;
+ 	text-align: center;
+	text-decoration: none;
+ 	display: inline-block;
+	font-size: 24px;
+}
+
+p{
+	margin:auto;
+	color: white;
+	text-decoration: none;
+	font-size: 22px;
+	padding-right: 10px;
+}
+
+input{
+
+}
